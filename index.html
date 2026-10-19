@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover timeless fashion at Nayab Atelier. Explore elegant Eastern and Western wear.">
+  <title>Nayab Atelier | Timeless Elegance</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    A WORLD OF TIMELESS ELEGANCE
+  </div>
+
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <a href="#home" class="logo">NAYAB <span>ATELIER</span></a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#shop" class="bag-link">BAG (<span id="bagCount">0</span>)</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">THE ART OF DRESSING</p>
+        <h1>Elegance is<br><em>an attitude.</em></h1>
+        <p class="hero-description">
+          Thoughtfully curated fashion for the woman
+          who carries her own kind of grace.
+        </p>
+        <a href="#shop" class="button button-dark">EXPLORE THE COLLECTION</a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Elegant neutral-toned fashion editorial"></div>
+      <div class="hero-index">01 — THE SIGNATURE COLLECTION</div>
+    </section>
+
+    <section class="intro section-padding">
+      <p class="eyebrow">WELCOME TO NAYAB ATELIER</p>
+      <h2>Less, but <em>exceptional.</em></h2>
+      <p>
+        A celebration of timeless silhouettes, considered details
+        and effortless sophistication. Discover pieces designed
+        to become part of your story.
+      </p>
+    </section>
+
+    <section class="collections section-padding" id="collections">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Explore our <em>world.</em></h2>
+        </div>
+        <a href="#shop" class="text-link">VIEW ALL PRODUCTS ↗</a>
+      </div>
+
+      <div class="collection-grid">
+        <a class="collection-card" href="#shop" data-category-link="Eastern Wear">
+          <div class="collection-image eastern-image"></div>
+          <div class="collection-caption">
+            <div><h3>Eastern Elegance</h3><p>Grace in every detail</p></div>
+            <span>↗</span>
+          </div>
+        </a>
+
+        <a class="collection-card" href="#shop" data-category-link="Western Wear">
+          <div class="collection-image western-image"></div>
+          <div class="collection-caption">
+            <div><h3>Modern Classics</h3><p>Effortless sophistication</p></div>
+            <span>↗</span>
+          </div>
+        </a>
+
+        <a class="collection-card" href="#shop" data-category-link="Essentials">
+          <div class="collection-image essentials-image"></div>
+          <div class="collection-caption">
+            <div><h3>The Essentials</h3><p>Everyday, elevated</p></div>
+            <span>↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="shop section-padding" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE ATELIER EDIT</p>
+          <h2>Selected <em>pieces.</em></h2>
+        </div>
+      </div>
+
+      <div class="filters" aria-label="Filter products">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Eastern Wear">Eastern Wear</button>
+        <button class="filter" data-filter="Western Wear">Western Wear</button>
+        <button class="filter" data-filter="Essentials">Essentials</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <p class="demo-note">A preview collection — product names, prices and availability are examples.</p>
+    </section>
+
+    <section class="brand-story" id="about">
+      <div class="story-image" role="img" aria-label="Neutral fashion editorial detail"></div>
+      <div class="story-content">
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>Made for moments.<br><em>Kept forever.</em></h2>
+        <p>
+          At Nayab Atelier, we believe true style goes beyond
+          trends. It lives in the details, the feeling of a fabric
+          and the confidence of wearing something that feels like you.
+        </p>
+        <a href="#contact" class="button button-outline">DISCOVER OUR STORY</a>
+      </div>
+    </section>
+
+    <section class="newsletter section-padding">
+      <p class="eyebrow">A NOTE FROM THE ATELIER</p>
+      <h2>Stay in the <em>know.</em></h2>
+      <p>New collections, thoughtful styling and notes on timeless fashion.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <label class="visually-hidden" for="newsletterEmail">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+        <button type="submit">SUBSCRIBE ↗</button>
+      </form>
+      <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="logo footer-logo">NAYAB <span>ATELIER</span></a>
+        <p class="footer-description">Timeless style. Thoughtful design.<br>Elegance in every detail.</p>
+      </div>
+      <div>
+        <h4>EXPLORE</h4>
+        <a href="#collections">Collections</a>
+        <a href="#shop">Shop all</a>
+        <a href="#about">Our story</a>
+      </div>
+      <div>
+        <h4>CONNECT</h4>
+        <a href="#" id="instagramLink" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="#" id="whatsappLink" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+        <a href="mailto:nayabatelier@example.com">Email us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Nayab Atelier. All rights reserved.</p>
+      <p>DESIGNED WITH INTENTION.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
